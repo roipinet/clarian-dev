@@ -1,0 +1,965 @@
+@font-face {
+  font-family: Metropolis;
+  src: url("/assets/font/Metropolis-Regular.otf");
+}
+@font-face {
+  font-family: Metropolis;
+  font-weight: bold;
+  src: url("/assets/font/Metropolis-Bold.otf");
+}
+
+@font-face {
+  font-family: Frutiger;
+  src: url("/assets/font/Frutiger.ttf");
+}
+@font-face {
+  font-family: Frutiger;
+  font-weight: bold;
+  src: url("/assets/font/Frutiger_bold.ttf");
+}
+
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: Frutiger;
+}
+
+/* Mobile Nav */
+
+ul {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Frutiger;
+}
+
+.main--h3 {
+  color: #7897ac;
+  font-size: 1.5rem;
+}
+
+.nav__button {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.footer__logo {
+  height: 80px;
+  margin-right: -38px;
+}
+
+.header {
+  padding: 40px 0;
+  background-color: #7897ac;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 25%;
+}
+
+#navbar__logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: inline-block;
+  /* border: 2px dashed black; */
+  height: auto;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+}
+
+#navbar__logo__img {
+  max-width: 100%;
+  height: auto;
+}
+
+#navbar__social {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* border: 2px dashed black; */
+  text-align: right;
+}
+
+.navbar__social__icon {
+  color: #7897ac;
+  background: #fff;
+  padding: 0.35rem;
+  text-align: center;
+  display: inline;
+  border-radius: 50%;
+  width: 1rem;
+  line-height: 1.1rem;
+  float: right;
+  margin-left: 5px;
+}
+
+#navbar__links {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 30px;
+}
+
+.navbar__link {
+  height: fit-content;
+  background: #7897ac;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar__link:hover {
+  color: #f6de8c;
+}
+
+.navbar__link.active {
+  color: #f6de8c;
+}
+
+.section {
+  animation: ease-in 0.5s all;
+  display: none;
+}
+
+.section.active {
+  animation: ease-in 0.5s all;
+  display: block;
+}
+
+.service-section {
+  animation: ease-in 0.5s all;
+  display: none;
+}
+
+.service-section.active {
+  animation: ease-in 0.5s all;
+  display: block;
+}
+
+.section__container {
+  box-sizing: border-box;
+  height: 700px;
+}
+
+#section-claridad {
+  background-image: url("/assets/imgs/inicio_section1_photo.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section-claridad > .text-container {
+  width: 290px;
+  margin-left: 25%;
+}
+
+#section-claridad > .text-container > h1 {
+  color: #fff;
+  font-size: 3.2rem;
+}
+
+#section-claridad > .text-container > h2 {
+  color: #7897ac;
+  font-size: 2rem;
+}
+
+#section-primer-paso > .grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 50%;
+  min-width: 700px;
+  margin-left: 25%;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#section-primer-paso > .grid-container > .text-container {
+  color: #7897ac;
+}
+
+#section-primer-paso > .grid-container > .text-container > h2 {
+  font-size: 2rem;
+}
+
+#section-primer-paso > .grid-container > .text-container > p {
+  line-height: 1.7rem;
+}
+
+#section-primer-paso > .grid-container > img {
+  width: 100%;
+}
+
+#section-aliados {
+  background-image: url("/assets/imgs/Clarian-aliados.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+#section-aliados > .text-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 25%;
+  margin-left: 50%;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#section-aliados > .text-container > h2 {
+  font-size: 2rem;
+  color: #f6de8c;
+}
+
+#section-aliados > .text-container > p {
+  line-height: 1.7rem;
+  color: #fff;
+}
+
+#section-comprometidos {
+  background-image: url("/assets/imgs/Clarian-comprometidos.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+#section-comprometidos > .text-container {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 290px;
+  margin-left: 25%;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #7897ac;
+}
+
+#section-comprometidos > .text-container > .bold-paragraph {
+  font-weight: bold;
+}
+
+.section__container.container--psicologos {
+  max-height: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.section__container.container--psicologos > img {
+  max-height: 70%;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+}
+
+.psicologos-container::before {
+  content: "";
+  width: 250px;
+  height: 250px;
+  border: 27px solid rgb(120, 151, 172);
+  border-right-color: rgb(120, 151, 172);
+  border-right-style: solid;
+  border-right-width: 27px;
+  border-bottom-color: rgb(120, 151, 172);
+  border-bottom-style: solid;
+  border-bottom-width: 27px;
+  border-bottom: none;
+  border-top-left-radius: 292px;
+  position: absolute;
+  left: 39.5%;
+  top: 21px;
+  border-right: none;
+}
+
+.psicologos-circle {
+  position: relative;
+  left: 42%;
+  top: 10%;
+  color: #7897ac;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(
+    ellipse at center,
+    rgb(246, 222, 140) 0%,
+    rgb(246, 222, 140) 70%,
+    rgb(246, 222, 140) 70.3%
+  );
+  margin: 0;
+}
+
+.psicologos-circle::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(
+    230px 3px,
+    67.76% 3.05%,
+    48.75% 7.46%,
+    33.62% 12.18%,
+    21.14% 19.24%,
+    10.75% 133px,
+    4.43% 36.15%,
+    7.2% 41.52%,
+    6.91% 52.17%,
+    2.52% 59.78%,
+    4.61% 64.51%,
+    18.37% 65.84%,
+    25.75% 70.02%,
+    33.2% 75.06%,
+    45.71% 79.56%,
+    54.21% 81.8%,
+    59.15% 86.39%,
+    56.96% 91.66%,
+    52.41% 94.1%,
+    64.51% 97%,
+    79.25% 99.12%,
+    97.18% 100.06%,
+    -30.76% 121.84%,
+    -34.9% 64.05%,
+    -2.07% 1.17%
+  );
+  shape-margin: 1%;
+}
+
+.psicologos-text-container::before {
+  content: "";
+  float: right;
+  height: 500px;
+  width: 50%;
+  shape-outside: polygon(
+    2% 0%,
+    100% 0%,
+    100% 100%,
+    2% 100%,
+    50% 94%,
+    76.6% 82.7%,
+    94% 65.6%,
+    100% 50%,
+    94% 32.6%,
+    76.6% 17.3%,
+    50% 6%
+  );
+  shape-margin: 1%;
+}
+
+.psicologos-text-container {
+  z-index: 3;
+}
+
+.psicologos-text-container > h2 {
+  margin-bottom: 20px;
+  padding-top: 75px;
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.psicologos-text-container > p {
+  font-size: 1.2rem;
+  line-height: 1.45;
+}
+
+#section-compromiso {
+  background-image: url("/assets/imgs/Clarian-compromiso-min.jpeg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  text-align: center;
+}
+
+#section-compromiso > .text-container {
+  max-width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+#section-compromiso > .text-container > h2 {
+  color: #f6de8c;
+}
+
+#section-compromiso > .text-container > p {
+  color: #fff;
+}
+
+#seccion-claridad-significa {
+  background-image: linear-gradient(
+      180deg,
+      rgba(246, 222, 140, 0) 35%,
+      rgba(246, 222, 140, 0) 100%
+    ),
+    url("/assets/imgs/Clarian-claridad-significa-min.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+#seccion-claridad-significa > .text-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  font-size: 1.3rem;
+  color: #fff;
+  justify-content: center;
+  height: 100%;
+}
+
+#seccion-claridad-significa > .text-container > p {
+  margin-top: 30px;
+}
+
+#seccion-claridad-significa > .text-container > .author-quote {
+  margin-top: 100px;
+}
+
+#section-nuestros-servicios {
+  height: 270px;
+  background: #fadf8d;
+  color: #7897ac;
+  text-align: center;
+}
+
+#section-nuestros-servicios > .text-container {
+  width: 420px;
+  margin: 0 auto;
+  padding: 70px;
+}
+
+#section-nuestros-servicios > .text-container > h2 {
+  font-size: 2rem;
+}
+
+#section-nuestros-servicios > .text-container > p {
+  margin-top: 30px;
+}
+
+#section-lista-servicios {
+  margin: 0 auto;
+}
+
+.horizontal-rule-separator {
+  width: 50%;
+  border: 1px solid #fadf8d;
+}
+
+.horizontal-rule-stump {
+  border: 1px solid #fadf8d;
+  background-color: #f6de8c;
+  color: #f6de8c;
+  height: 5px;
+  width: 10%;
+}
+
+.clarian-service-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  width: 550px;
+  margin: auto;
+  height: 170px;
+  padding: 20px;
+}
+
+.clarian-service-container > img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.clarian-service-container__list {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  color: #7897ac;
+}
+
+.clarian-service-container__list > ul > li {
+  margin-bottom: 10px;
+  list-style-position: inside;
+}
+
+.clarian-service-container__list > h2 {
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+}
+.clarian-service-container__button {
+  background-color: #fadf8d;
+  border-radius: 42px;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+  color: #7897ac;
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+.clarian-service-container__button:hover {
+  background-color: #7897ac;
+  color: #f6de8c;
+}
+
+#section-servicios-gaze {
+  background-image: url("/assets/imgs/Clarian-servicios-gaze.jpg");
+  background-position: initial; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 650px;
+}
+
+.section--servicios--terapia,
+.section--servicios--talleres,
+.section--servicios--diagnostico {
+  padding: 60px 25% 0;
+  height: fit-content;
+}
+
+.section-terapia__list,
+.section-talleres__list {
+  color: #7897ac;
+}
+
+.section-terapia__list > hr,
+.section-talleres__list > hr {
+  color: #7897ac;
+  margin-bottom: 20px;
+  border-bottom: 0;
+}
+
+.section-terapia__list__item,
+.section-talleres__list__item {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 20px;
+}
+
+.section-terapia-header__img {
+  width: 100%;
+}
+
+.section-talleres-header__img {
+  max-width: 100%;
+  max-height: 75%;
+}
+
+.section-terapia__list__item__number,
+.section-talleres__list__item__number {
+  font-size: 3rem;
+  color: #f6de8c;
+}
+
+.superscript {
+  font-size: 2rem;
+}
+
+.section-terapia__list__item__description {
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.section-talleres__list__item__description {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.section-terapia__list__item__footer {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.section--servicios--diagnostico.active {
+  color: #7897ac;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.section-diagnostico__container__image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.section-diagnostico__container__image > img {
+  height: 60%;
+}
+
+.section-diagnostico__text {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.section-servicios__list {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#section-fritz {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(246, 222, 140, 0) 100%
+    ),
+    url("/assets/imgs/Clarian-fritz.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: relative;
+}
+
+#section-fritz > .text-container {
+  width: 450px;
+  font-size: 1.5rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #7897ac;
+}
+
+#section-fritz > div:nth-child(1) > p:nth-child(2) {
+  margin-top: 70px;
+}
+
+#section-testimonios-list {
+  text-align: center;
+}
+
+.section-testimonios__list__item {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  color: #7897ac;
+  font-size: 1.2rem;
+  height: 190px;
+  padding: 25px;
+}
+
+.section-testimonios__list__item > h3 {
+  margin-top: 50px;
+}
+
+.section-testimonios__video {
+  background-image: linear-gradient(
+      125deg,
+      rgba(120, 151, 172, 0.5326505602240896) 9%,
+      rgba(120, 151, 172, 0.5326505602240896) 58%
+    ),
+    url("/assets/imgs/clarian_mountains.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: relative;
+}
+
+.video__container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.video__container > video {
+  border: solid 3px white;
+}
+
+.video__description {
+  margin-top: 20px;
+  max-width: 360px;
+  text-align: justify;
+  color: white;
+}
+
+#section-naturaleza {
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(246, 222, 140, 0) 100%
+    ),
+    url("/assets/imgs/Clarian-naturaleza.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: relative;
+}
+
+#section-naturaleza > .text-container {
+  width: 450px;
+  font-size: 1.5rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+#section-naturaleza > .text-container > h3 {
+  margin-top: 50px;
+  color: #fff;
+}
+
+.section-contacto-data,
+.section-contacto-citas {
+  overflow: auto;
+  height: auto;
+}
+
+.section-contacto-citas {
+  margin-bottom: 70px;
+}
+
+.section-contacto-data__container,
+.section-contacto-citas__container {
+  display: grid;
+  grid-template: 1fr / 1fr 4fr;
+  margin-left: 25%;
+  margin-top: 70px;
+  grid-column-gap: 25px;
+}
+
+.section-contacto__data__list {
+  display: flex;
+  flex-direction: column;
+  color: #7897ac;
+}
+
+.section-contacto__data__list > p:nth-child(8) > a:nth-child(3) {
+  text-decoration: 0;
+  color: #7897ac;
+}
+
+.section-contacto__data__list > p:nth-child(8) > a:nth-child(3):hover {
+  text-decoration: underline;
+}
+
+.section-contacto__data__list > img {
+  max-width: 100px;
+  align-self: center;
+  margin-bottom: 45px;
+}
+
+.section-contacto-citas-img__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-contacto-citas-img__container > img {
+  max-width: 100px;
+  align-self: center;
+  margin-bottom: 45px;
+}
+
+.section-contacto__data__list > hr {
+  border-color: #7897ac;
+  margin: 5px 0;
+  width: 100%;
+  border-bottom: 0;
+}
+.section-contacto__map,
+.section-contacto-citas__form {
+  background-color: #f6de8c;
+  padding: 25px 0 0 35px;
+}
+
+.section-contacto-citas__form {
+  color: #7897ac;
+}
+
+.section-contacto-citas-form__header {
+  margin-top: 40px;
+}
+
+.cita-fecha-input {
+  padding: 7px;
+  border-radius: 10px;
+  color: #7c98ab;
+  background-color: white;
+  display: inline-block;
+  margin: 15px 0 25px;
+}
+
+.appointment-input {
+  background-color: transparent;
+  border: 0;
+}
+
+.service-list__header {
+  margin-bottom: 10px;
+}
+
+.service-option-input {
+  margin: 0 0 8px -18px;
+}
+
+.section-contacto-citas__form__submit-button {
+  width: 423px;
+  background-color: #7897ac;
+  color: #fff;
+  text-align: start;
+  border: 0;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 15px 0 50px;
+}
+
+.footer {
+  background: url("/assets/imgs/modulacion_black.png"),
+    linear-gradient(
+      90deg,
+      rgba(124, 152, 171, 1) 35%,
+      rgba(124, 152, 171, 1) 100%
+    );
+  height: 550px;
+  background-size: contain, cover;
+  background-repeat: repeat-x, repeat;
+}
+
+.footer .footer__container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+}
+.footer .footer__container .footer__nav {
+  display: grid;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 70%;
+  width: 33%;
+  align-items: center;
+}
+.footer .footer__container .footer__nav .nav__button {
+  width: 100%;
+  text-align: right;
+}
+.footer .footer__container .footer__contact__form {
+  display: flex;
+  flex-flow: column wrap;
+  height: 80%;
+  width: 66%;
+  justify-content: space-evenly;
+}
+.footer .footer__container .footer__contact__form h3 {
+  color: #fff;
+}
+.footer .footer__container .footer__contact__form .singleLineInput {
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  color: #7c98ab;
+  background-color: #fadf8d;
+  display: block;
+}
+.footer
+  .footer__container
+  .footer__contact__form
+  .singleLineInput
+  input[type="text"],
+.footer
+  .footer__container
+  .footer__contact__form
+  .singleLineInput
+  input[type="email"] {
+  background-color: transparent;
+  border: 0;
+  width: 80%;
+}
+.footer .footer__container .footer__contact__form .longInput {
+  background-color: #fadf8d;
+  display: block;
+  color: #7c98ab;
+  padding: 7px;
+  border-radius: 10px;
+}
+.footer .footer__container .footer__contact__form .longInput textarea {
+  background-color: transparent;
+  border: 0;
+  width: 100%;
+  resize: none;
+}
+.footer .footer__container .footer__contact__form input[type="submit"] {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* iPad */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 20px 0;
+    height: 80px;
+  }
+
+  #section-primer-paso > .grid-container {
+    max-width: 90vw;
+    margin: auto 55px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  #section-aliados > .text-container {
+    width: 40%;
+    margin-left: 50%;
+  }
+
+  .footer .footer__container {
+    width: 80%;
+  }
+}

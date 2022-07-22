@@ -1,0 +1,24 @@
+{
+  "responsive-preview": {
+    "Mobile": [
+      384,
+      854
+    ],
+    "Tablet": [
+      1024,
+      765
+    ],
+    "Desktop": [
+      1400,
+      800
+    ],
+    "Desktop HD": [
+      1920,
+      1080
+    ],
+    "iPhone 13 Pro": [
+      390,
+      844
+    ]
+  }
+}
