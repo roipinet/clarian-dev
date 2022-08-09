@@ -12,6 +12,9 @@ function goToSection(newSection, button) {
     activeButton.classList.remove("active");
     document.getElementById(newSection).classList.add("active");
     document.getElementById(button).classList.add("active");
+    if (newSection === "section-contacto") {
+      refreshWidgets();
+    }
   }
 }
 
@@ -30,4 +33,12 @@ function openServiceSection(newServiceSection) {
     document.querySelector(newServiceSection).classList.add("active");
   }
   document.querySelector(".service-section.active").scrollIntoView();
+}
+
+function refreshWidgets() {
+  console.log("refreshing widgets");
+  var iframes = document.querySelector("iframe");
+  for (let index = 0; index < iframes.length; index++) {
+    iframes[index].contentWindow.location.reload();
+  }
 }

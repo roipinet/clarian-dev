@@ -11,26 +11,68 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
   <script src="script.js"></script>
+  <script>!function ($_x, _s, id) { var js, fjs = $_x.getElementsByTagName(_s)[0]; if (!$_x.getElementById(id)) { js = $_x.createElement(_s); js.id = id; js.src = "//platform.docplanner.com/js/widget.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "zl-widget-s");</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>Clarian | Inicio</title>
   <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.ico">
   <!-- Jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".menu-btn").click(function (event) {
+        $(".navbar-demo").toggleClass("open-nav");
+      });
+    });
+    $(document).ready(function () {
+      $(".menu-btn").click(function (event) {
+        $(".mobile-header").toggleClass("open-nav");
+      });
+    });
+    </script>
 </head>
 
 <body>
-  <div class="header">
+  <!-- Mobile navmenu -->
+    <header id="header" class="navbar-demo">
+      <div class="mobile-header">
+          <img  class="mobile-header-logo" src="/assets/imgs/Clarian_logo_negativo_sinfondo.png" alt="clarian brand logo" srcset="">
+      </div>
+        <div class="nav-bar">
+          <img  class="mobile-menu-logo" src="/assets/imgs/Clarian_logo_negativo_sinfondo.png" alt="clarian brand logo" srcset="">
+          <div class="navbar__social mobile-social">
+              <a href="https://www.facebook.com/clarianmx" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f navbar__social__icon"></i></a>
+              <a href="https://www.instagram.com/clarianmx/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram navbar__social__icon"></i></a>
+              <a href="https://twitter.com/ClarianMx" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter navbar__social__icon"></i></a>
+              <a href="https://www.tiktok.com/@clarianmx" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok navbar__social__icon"></i></a>
+              <a href="https://www.youtube.com/channel/UCLP2tityqlp9UQvUuWzkn2w" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube navbar__social__icon"></i></a>
+            </div>
+          <ul>
+            <li>
+              <button href="#">Inicio</button>
+              <button href="#">Nosotros</button>
+              <button href="#">Servicios</button>
+              <button href="#">Testimonios</button>
+              <button href="#">Contacto</button>
+            </li>
+          </ul>
+          
+        </div>
+        <button type="" class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      </header> 
+  <div class="desktop-header">
     <div class="navbar">
       <div id="navbar__logo">
         <img src="/assets/imgs/Clarian_logo_negativo_sinfondo.png" alt="" srcset="" id="navbar__logo__img">
       </div>
-      <div id="navbar__social">
-        <a href="https://www.facebook.com/clarianmx"><i class="fab fa-facebook-f navbar__social__icon"></i></a>
-        <a href="https://www.instagram.com/clarianmx/"><i class="fab fa-instagram navbar__social__icon"></i></a>
-        <a href="https://www.tiktok.com"><i class="fab fa-twitter navbar__social__icon"></i></a>
-        <a href="https://www.youtube.com"><i class="fab fa-linkedin-in navbar__social__icon"></i></a>
+      <div class="navbar__social">
+        <a href="https://www.facebook.com/clarianmx" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f navbar__social__icon"></i></a>
+        <a href="https://www.instagram.com/clarianmx/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram navbar__social__icon"></i></a>
+        <a href="https://twitter.com/ClarianMx" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter navbar__social__icon"></i></a>
+        <a href="https://www.tiktok.com/@clarianmx" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok navbar__social__icon"></i></a>
+        <a href="https://www.youtube.com/channel/UCLP2tityqlp9UQvUuWzkn2w" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube navbar__social__icon"></i></a>
       </div>
       <nav id="navbar__links">
-        <button type="button" class="navbar__link active" id="nav-inicio"
+        <button type="button" class="navbar__link active" id="nav-nosotros"
           onclick="goToSection('section-inicio', 'nav-inicio')">
           Inicio
         </button>
@@ -42,7 +84,7 @@
           onclick="goToSection('section-servicios', 'nav-servicios')">
           Servicios
         </button>
-        <button type="button" class="navbar__link" id="nav-testimonios"
+        <button type="button" class="navbar__link nav-testimonios"
           onclick="goToSection('section-testimonios', 'nav-testimonios')">
           Testimonios
         </button>
@@ -387,59 +429,39 @@
         <h3>Deepak Chopra</h3>
       </div>
     </div>
-    <div class="section__container section-contacto-data">
-      <div class="section-contacto-data__container">
-          <div class="section-contacto__data__list">
-              <img src="/assets/imgs/map_icon.png" alt="" srcset="">
-              <p>Anillo Periférico Ecológico #3507 Consultorio 703 Tlaxcalancingo, Pue.</p>
-              <hr>
-              <p><b>Mail:</b> <br> contacto@clarian.mx</p>
-              <hr>
-              <p><b>Tels.:</b> <br> 221 649 9608 <br> 222 292 7588</p>
-              <hr>
-              <p><b>Encuéntranos en:</b><br> <a href="https://www.doctoralia.com.mx/clinicas/clarian">www.doctoralia.com.mx</a></p>
-            </div>
-            <div class="section-contacto__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.500982206674!2d-98.26622396853006!3d19.020184971974153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc77603055555%3A0x7268cbe3fea5365a!2sClarian!5e0!3m2!1ses-419!2smx!4v1642646871391!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-      </div>
-      
-    </div>
     <div class="section__container section-contacto-citas">
-      <div class="section-contacto-citas__container">
-          <div class="section-contacto-citas-img__container">
-              <img src="/assets/imgs/Contacto_icon.png" alt="" srcset="">
-          </div>
-          <div class="section-contacto-citas__form">
-            <h5 class="section-contacto-citas-form__header">AGENDA TU CITA</h5>
-            <form>
-              <span class="cita-fecha-input">
-                  <label for="fname">DÍA:</label>
-                  <input class="appointment-input" type="text" id="input-dia" name="dia">
-              </span>
-              <span class="cita-fecha-input">
-                  <label for="lname">HORA:</label>
-                  <input class="appointment-input" type="text" id="input-hora" name="hora">
-              </span>
-              <h5 class="service-list__header">SERVICIOS:</h5>
-              <input class="service-option-input" type="radio" id="terapia-psicologica" name="servicio" value="terapia-psicologica">
-              <label for="terapia-psicologica">TERAPIA PSICOLÓGICA</label><br>
-              <input class="service-option-input" type="radio" id="talleres" name="servicio" value="talleres">
-              <label for="talleres">TALLERES</label><br>
-              <input class="service-option-input" type="radio" id="diagnostico" name="servicio" value="diagnostico">
-              <label for="diagnostico">DIAGNÓSTICO</label><br>
-              <input class="service-option-input" type="radio" id="orientacion-vocacional" name="servicio" value="orientacion-vocacional">
-              <label for="orientacion-vocacional">ORIENTACIÓN VOCACIONAL</label><br>
-              <input class="section-contacto-citas__form__submit-button" type="submit" value="ENVIAR >">
-            </form>
-          </div>
+      <h2 class="contacto__title">Agenda una cita con nosotros</h2>
+      <div id="section-contacto-citas__container" style="height: 850px; display:flex; flex-direction:row">
+          <a id="zl-url" class="zl-url" href="https://www.doctoralia.com.mx/guillermo-pacheco-pando/psicologo/san-andres-cholula"
+            rel="nofollow" data-zlw-doctor="guillermo-pacheco-pando" data-zlw-type="big_with_calendar" data-zlw-opinion="false"
+            data-zlw-hide-branding="true">Guillermo Pacheco Pando - Doctoralia.com.mx</a>
+          <a id="zl-url" class="zl-url" href="https://www.doctoralia.com.mx/monica-cano-ruiz/psicologo/san-andres-cholula"
+            rel="nofollow" data-zlw-doctor="monica-cano-ruiz" data-zlw-type="big_with_calendar" data-zlw-opinion="false"
+            data-zlw-hide-branding="true">Mónica Cano Ruiz - Doctoralia.com.mx</a>
       </div>
     </div>
   </div>
   <div class="section" id="section-servicios"></div>
   <div class="footer">
     <div class="footer__container">
-      <div class="footer__nav">
+        <div class="section__container section-contacto-data">
+            <div class="section-contacto-data__container">
+                <div class="section-contacto__data__list">
+                    <img src="/assets/imgs/map_icon.png" alt="" srcset="">
+                    <p>Anillo Periférico Ecológico #3507 Consultorio 703 Tlaxcalancingo, Pue.</p>
+                    <hr>
+                    <p><b>Mail:</b> <br> contacto@clarian.mx</p>
+                    <hr>
+                    <p><b>Tels.:</b> <br> 221 649 9608 <br> 222 292 7588</p>
+                    <hr>
+                    <p><b>Encuéntranos en:</b><br> <a href="https://www.doctoralia.com.mx/clinicas/clarian">www.doctoralia.com.mx</a></p>
+                  </div>
+                  <div class="section-contacto__map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.500982206674!2d-98.26622396853006!3d19.020184971974153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc77603055555%3A0x7268cbe3fea5365a!2sClarian!5e0!3m2!1ses-419!2smx!4v1642646871391!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </div>
+            </div>
+          </div>
+      <!-- <div class="footer__nav">
         <img src="/assets/imgs/navbar-logo.png" alt="" class="footer__logo" />
         <a href="#" class="nav__button">Inicio</a>
         <a href="#" class="nav__button">Nosotros</a>
@@ -457,8 +479,8 @@
           <a href="https://www.linkedin.com">
             <i class="fab fa-linkedin-in navbar__social__icon"></i></a>
         </div>
-      </div>
-      <div class="footer__contact__form">
+      </div> -->
+      <!-- <div class="footer__contact__form">
         <h3>CONTÁCTANOS</h3>
         <form action="" method="POST" enctype="multipart/form-data" name="EmailForm">
           <span class="singleLineInput">
@@ -475,7 +497,7 @@
           </span>
           <input type="submit" value="ENVIAR >" />
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
 </body>
